@@ -1,0 +1,58 @@
+
+:root {
+    --box-primary-color: white;
+    --box-secondary-color: black;
+    --piece-primary-color: yellow;
+    --piece-secondary-color: brown;
+    --piece-on-hover-color: green;
+    --box-side: 50px;
+    --piece-side: 42px;
+}
+
+body {
+    background-color: pink;
+}
+
+.checkersGameLineOdd {
+    display: flex;
+    flex: column;
+}
+
+.checkersGameLineEven {
+    display: flex;
+    flex: column;
+}
+
+.gameBox {
+    width: var(--box-side, 50px);
+    height: var(--box-side, 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBox.color1 {
+    background-color: var(--box-primary-color, white);
+}
+
+.gameBox.color2 {
+    background-color: var(--box-secondary-color, black);
+}
+
+.gamePiece {
+    width: var(--piece-side, 42px);
+    height: var(--piece-side, 42px);
+    border-radius: 50%;
+}
+
+.gamePiece.color1 {
+    background-color: var(--piece-primary-color, yellow);
+}
+
+.gamePiece.color2 {
+    background-color: var(--piece-secondary-color, brown);
+}
+
+.gamePiece:hover {
+    background-color: var(--piece-on-hover-color, green);
+}
